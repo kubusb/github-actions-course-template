@@ -24,7 +24,7 @@ jobs:
           path: public/
       
   test:
-    runs-on: ${{ os }}
+    runs-on: pi2
     needs: build
     
     strategy:
