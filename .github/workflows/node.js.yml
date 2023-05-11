@@ -24,7 +24,7 @@ jobs:
           path: public/
       
   test:
-    runs-on: pi2
+    runs-on: ${{ matrix.os }}
     needs: build
     
     strategy:
